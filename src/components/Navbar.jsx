@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -9,15 +10,20 @@ const navLinks = [
   { label: 'Contact', href: '#contact' },
 ];
 
-export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
+export default function Navbar({ alwaysSolid = false }) {
+  const [scrolled, setScrolled] = useState(alwaysSolid);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === '/';
 
   useEffect(() => {
+    if (alwaysSolid) return;
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [alwaysSolid]);
+
+  const getHref = (href) => (isHome ? href : `/${href}`);
 
   return (
     <nav
@@ -30,7 +36,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3 group">
+          <a href={getHref('#home')} className="flex items-center gap-3 group">
             <img 
               src={`${import.meta.env.BASE_URL}assets/aglogo.jpeg`} 
               alt="Arul Granites Logo" 
@@ -51,7 +57,7 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <a
                 key={link.href}
-                href={link.href}
+                href={getHref(link.href)}
                 className={`px-4 py-2 text-[13px] font-medium tracking-wide uppercase transition-colors hover:text-primary ${
                   scrolled ? 'text-text-secondary' : 'text-white/90'
                 }`}
@@ -63,7 +69,7 @@ export default function Navbar() {
 
           {/* CTA */}
           <a
-            href="#contact"
+            href={getHref('#contact')}
             className="hidden md:inline-flex items-center px-5 py-2.5 bg-primary text-white text-xs font-semibold tracking-wider uppercase hover:bg-primary-dark transition-colors"
           >
             Get Quote
@@ -106,7 +112,7 @@ export default function Navbar() {
           {navLinks.map((link) => (
             <a
               key={link.href}
-              href={link.href}
+              href={getHref(link.href)}
               onClick={() => setMobileOpen(false)}
               className="block px-4 py-3 text-sm font-medium text-text-secondary hover:text-primary hover:bg-surface-alt transition-colors"
             >
@@ -114,7 +120,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#contact"
+            href={getHref('#contact')}
             onClick={() => setMobileOpen(false)}
             className="block mt-2 px-4 py-3 bg-primary text-white text-sm font-semibold text-center"
           >

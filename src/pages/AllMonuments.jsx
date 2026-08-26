@@ -1,54 +1,18 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { monumentImages } from '../data/monumentsData'
+import Navbar from '../components/Navbar'
 
 export default function AllMonuments() {
   const [lightbox, setLightbox] = useState(null)
-  const [scrolled, setScrolled] = useState(false)
-
   useEffect(() => {
     window.scrollTo(0, 0)
-    const handleScroll = () => setScrolled(window.scrollY > 50)
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
     <div className="min-h-screen bg-surface-alt">
       {/* Navbar */}
-      <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? 'bg-white/95 backdrop-blur-md shadow-[0_1px_0_0_#e5e7eb]' : 'bg-transparent'
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
-            <Link to="/" className="flex items-center gap-3 group">
-              <img 
-                src={`${import.meta.env.BASE_URL}assets/aglogo.jpeg`} 
-                alt="Arul Granites Logo" 
-                className="w-10 h-10 object-cover rounded-sm" 
-              />
-              <div className="hidden sm:block">
-                <span className={`text-sm font-bold tracking-wide transition-colors ${scrolled ? 'text-text-primary' : 'text-dark'}`}>
-                  ARUL GRANITES
-                </span>
-                <span className={`block text-[10px] tracking-[0.2em] transition-colors ${scrolled ? 'text-text-muted' : 'text-dark/70'}`}>
-                  PVT LTD
-                </span>
-              </div>
-            </Link>
-            <Link 
-              to="/" 
-              className={`text-sm font-semibold tracking-wider uppercase transition-colors ${
-                scrolled ? 'text-text-primary hover:text-primary' : 'text-dark hover:text-primary'
-              }`}
-            >
-              Back to Home
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Navbar alwaysSolid />
 
       {/* Main Content */}
       <div className="pt-32 pb-24 max-w-7xl mx-auto px-6 lg:px-8">
