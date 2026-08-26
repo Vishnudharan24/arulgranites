@@ -1,6 +1,6 @@
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
-const colourSwatches = [
+export const colourSwatches = [
   { src: './assets/colours/IMG_4220.PNG', name: 'India Black (Absolute Black)' },
   { src: './assets/colours/IMG_4222.WEBP', name: 'India Mist' },
   { src: './assets/colours/IMG_4224.WEBP', name: 'Bahama blue' },
@@ -29,8 +29,11 @@ const colourSwatches = [
   { src: './assets/colours/IMG_4251.WEBP', name: 'Indian juparana' },
 ];
 
+import { Link } from 'react-router-dom';
+
 export default function Colours() {
   const ref = useScrollReveal();
+  const displayColours = colourSwatches.slice(0, 4);
 
   return (
     <section id="colours" className="py-24 lg:py-32 bg-surface-alt">
@@ -54,8 +57,8 @@ export default function Colours() {
         </div>
 
         {/* Swatch grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-1">
-          {colourSwatches.map((swatch, i) => (
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          {displayColours.map((swatch, i) => (
             <div
               key={i}
               className="group relative bg-white overflow-hidden"
@@ -78,6 +81,19 @@ export default function Colours() {
               <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 pointer-events-none" />
             </div>
           ))}
+        </div>
+
+        {/* View All Button */}
+        <div className="text-center mt-12 mb-8">
+          <Link
+            to="/colours"
+            className="inline-flex items-center px-8 py-4 bg-primary text-white text-sm font-semibold tracking-wider uppercase hover:bg-primary-dark transition-colors"
+          >
+            View All Colours
+            <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="square" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </Link>
         </div>
 
         {/* Note */}
