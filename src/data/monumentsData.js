@@ -1,5 +1,7 @@
 export const monumentImages = [
   `${import.meta.env.BASE_URL}assets/monuments/222a3bf1-9b66-48b4-97b2-972d06cc23b0.JPG`,
+  `${import.meta.env.BASE_URL}assets/monuments/15a57f7e-087a-49af-87fb-6e8d3b18d3d2.JPG`,
+  `${import.meta.env.BASE_URL}assets/monuments/IMG_4756.JPG`,
   `${import.meta.env.BASE_URL}assets/monuments/01d0cf77-6977-48d7-aed4-14f9f94c2771.JPG`,
   `${import.meta.env.BASE_URL}assets/monuments/0378d20f-0978-413a-bfb7-54eb0b037284.JPG`,
   `${import.meta.env.BASE_URL}assets/monuments/052f3296-16c3-4a4e-a498-a1a532820e1d.JPG`,
@@ -9,7 +11,6 @@ export const monumentImages = [
   `${import.meta.env.BASE_URL}assets/monuments/1067acf4-3866-4143-b11a-7df52fb52ec2.JPG`,
   `${import.meta.env.BASE_URL}assets/monuments/134c0b0c-46e2-43f3-bb32-1cd8746914c5.JPG`,
   `${import.meta.env.BASE_URL}assets/monuments/13e69fdc-6670-4983-88ae-cac518fbd32c.JPG`,
-  `${import.meta.env.BASE_URL}assets/monuments/15a57f7e-087a-49af-87fb-6e8d3b18d3d2.JPG`,
   `${import.meta.env.BASE_URL}assets/monuments/1810c3c1-e85b-4ae0-84e4-4aca36b3a082.JPG`,
   `${import.meta.env.BASE_URL}assets/monuments/182ab7b6-c57a-49dc-87cb-357e9d3fe00d.JPG`,
   `${import.meta.env.BASE_URL}assets/monuments/1ae10752-a2d6-4786-a9db-94f3f64956cc.JPG`,
@@ -114,7 +115,6 @@ export const monumentImages = [
   `${import.meta.env.BASE_URL}assets/monuments/IMG_4753.JPG`,
   `${import.meta.env.BASE_URL}assets/monuments/IMG_4754.JPG`,
   `${import.meta.env.BASE_URL}assets/monuments/IMG_4755.JPG`,
-  `${import.meta.env.BASE_URL}assets/monuments/IMG_4756.JPG`,
   `${import.meta.env.BASE_URL}assets/monuments/IMG_4757.JPG`,
   `${import.meta.env.BASE_URL}assets/monuments/IMG_4758.JPG`,
   `${import.meta.env.BASE_URL}assets/monuments/IMG_4759.JPG`,
