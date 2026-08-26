@@ -28,9 +28,11 @@ export default function Hero() {
           </div>
 
           {/* Heading */}
-          <h1 className="animate-fade-in-up delay-100 section-title text-5xl md:text-6xl lg:text-7xl text-white mb-6 opacity-0">
-            Precision in
-            <span className="block text-primary-light">Every Stone</span>
+          <h1 className="animate-fade-in-up delay-100 section-title text-white mb-6 opacity-0">
+            <span className="block text-5xl md:text-6xl lg:text-7xl mb-2">Arul Granites</span>
+            <span className="block text-3xl md:text-4xl lg:text-5xl text-white/90">
+              Precision in <span className="text-primary-light">Every Stone</span>
+            </span>
           </h1>
 
           {/* Description */}
