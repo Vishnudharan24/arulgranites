@@ -42,7 +42,7 @@ export default function Navbar({ alwaysSolid = false }) {
               alt="Arul Granites Logo" 
               className="w-10 h-10 object-cover rounded-sm" 
             />
-            <div className="hidden sm:block">
+            <div className="block">
               <span className={`text-sm font-bold tracking-wide transition-colors ${scrolled ? 'text-text-primary' : 'text-white'}`}>
                 ARUL GRANITES
               </span>
