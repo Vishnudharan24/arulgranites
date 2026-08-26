@@ -17,23 +17,9 @@ export default function Footer() {
             </div>
             <p className="text-white/60 text-sm leading-relaxed max-w-md mb-6">
               Leading manufacturer and exporter of premium Indian granite monuments
-              and stone products. Trusted by clients across 30+ countries for quality,
-              precision, and timely delivery.
+              and stone products. Trusted by clients across Germany, France, USA,
+              Canada, Poland, and the UK for quality, precision, and timely delivery.
             </p>
-            <div className="flex gap-3">
-              {['facebook', 'instagram', 'linkedin'].map((social) => (
-                <a
-                  key={social}
-                  href="#"
-                  className="w-9 h-9 bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
-                  aria-label={social}
-                >
-                  <span className="text-white text-xs font-bold uppercase">
-                    {social[0]}
-                  </span>
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Quick links */}

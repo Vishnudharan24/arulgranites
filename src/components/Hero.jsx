@@ -63,7 +63,7 @@ export default function Hero() {
         <div className="animate-fade-in-up delay-500 opacity-0 mt-20 grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 max-w-2xl">
           {[
             { value: '20+', label: 'Years Experience' },
-            { value: '30+', label: 'Countries Exported' },
+            { value: '6+', label: 'Countries Exported' },
             { value: '500+', label: 'Monument Designs' },
             { value: '100K+', label: 'Sq Ft Monthly' },
           ].map((stat, i) => (

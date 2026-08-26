@@ -62,7 +62,7 @@ export default function About() {
             <div className="grid grid-cols-2 gap-6">
               {[
                 { icon: '◆', title: 'Premium Quality', desc: 'Hand-selected blocks from top quarries' },
-                { icon: '◆', title: 'Global Export', desc: 'Shipping to 30+ countries worldwide' },
+                { icon: '◆', title: 'Global Export', desc: 'Shipping to Germany, France, USA, Canada, Poland & UK' },
                 { icon: '◆', title: 'Custom Designs', desc: 'Bespoke monuments & stone products' },
                 { icon: '◆', title: 'On-Time Delivery', desc: 'Reliable logistics & timely dispatch' },
               ].map((feature, i) => (
