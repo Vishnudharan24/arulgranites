@@ -66,12 +66,11 @@ export default function Hero() {
         </div>
 
         {/* Stats bar */}
-        <div className="animate-fade-in-up delay-500 opacity-0 mt-16 sm:mt-20 grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 max-w-2xl">
+        <div className="animate-fade-in-up delay-500 opacity-0 mt-16 sm:mt-20 grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/10 max-w-2xl">
           {[
             { value: '20+', label: 'Years Experience' },
             { value: '6', label: 'Countries Exported' },
-            { value: '268', label: 'Monument Designs' },
-            { value: '100K+', label: 'Sq Ft Monthly' },
+            { value: '100+', label: 'Containers Annually' },
           ].map((stat, i) => (
             <div key={i} className="bg-dark/50 backdrop-blur-sm px-4 py-5 sm:px-6">
               <div className="text-xl sm:text-2xl font-bold text-white">{stat.value}</div>
