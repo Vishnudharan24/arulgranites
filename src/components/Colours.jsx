@@ -1,7 +1,7 @@
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const colourSwatches = [
-  { src: './assets/colours/IMG_4220.PNG', name: 'Granite 1' },
+  { src: './assets/colours/IMG_4220.PNG', name: 'India Black (Absolute Black)' },
   { src: './assets/colours/IMG_4222.WEBP', name: 'Granite 2' },
   { src: './assets/colours/IMG_4224.WEBP', name: 'Granite 3' },
   { src: './assets/colours/IMG_4226.PNG', name: 'Granite 4' },
@@ -9,13 +9,13 @@ const colourSwatches = [
   { src: './assets/colours/IMG_4228.JPG', name: 'Indian Grey' },
   { src: './assets/colours/IMG_4229.JPG', name: 'Tan Brown' },
   { src: './assets/colours/IMG_4230.JPG', name: 'Steel Grey' },
-  { src: './assets/colours/IMG_4231.JPG', name: 'Granite 9' },
-  { src: './assets/colours/IMG_4232.JPG', name: 'India Black (Absolute Black)' },
-  { src: './assets/colours/IMG_4233.JPG', name: 'Granite 11' },
+  { src: './assets/colours/IMG_4231.JPG', name: 'Cats eye' },
+  { src: './assets/colours/IMG_4232.JPG', name: 'Galaxy' },
+  { src: './assets/colours/IMG_4233.JPG', name: 'Royal impla' },
   { src: './assets/colours/IMG_4234.jpg', name: 'Granite 12' },
   { src: './assets/colours/IMG_4235.jpg', name: 'Aurora' },
   { src: './assets/colours/IMG_4236.WEBP', name: 'Granite 14' },
-  { src: './assets/colours/IMG_4237.WEBP', name: 'Granite 15' },
+  { src: './assets/colours/IMG_4237.WEBP', name: 'Sapphire blue' },
   { src: './assets/colours/IMG_4238.JPG', name: 'Granite 16' },
   { src: './assets/colours/IMG_4239.PNG', name: 'Granite 17' },
   { src: './assets/colours/IMG_4240.JPG', name: 'Granite 18' },
