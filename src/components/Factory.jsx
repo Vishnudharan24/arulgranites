@@ -30,7 +30,7 @@ export default function Factory() {
             State-of-the-Art Factory
           </h2>
           <p className="text-text-secondary max-w-2xl mx-auto text-lg">
-            Our manufacturing unit in Sangagiri, Tamil Nadu is equipped with modern
+            Our manufacturing unit in Sankari, Tamil Nadu is equipped with modern
             machinery for precision cutting, polishing, and finishing of granite products.
           </p>
         </div>

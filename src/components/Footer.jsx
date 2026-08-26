@@ -62,7 +62,7 @@ export default function Footer() {
                 </svg>
                 <span className="text-sm text-white/60 leading-relaxed">
                   76, Nattampalayam, Sankari Rd,<br />
-                  Sangagiri, Tamil Nadu 637303
+                  Sankari, Tamil Nadu 637303
                 </span>
               </li>
               <li className="flex gap-3">

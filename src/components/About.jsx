@@ -52,7 +52,7 @@ export default function About() {
             </p>
 
             <p className="text-text-secondary leading-relaxed mb-8">
-              Our state-of-the-art factory in Sangagiri is equipped with modern cutting,
+              Our state-of-the-art factory in Sankari is equipped with modern cutting,
               polishing, and finishing machinery. Every block is hand-selected from the
               finest quarries, and every product undergoes rigorous quality checks before
               export. We combine traditional stone masonry expertise with modern precision
