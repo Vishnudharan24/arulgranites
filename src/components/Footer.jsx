@@ -61,7 +61,7 @@ export default function Footer() {
                   <path strokeLinecap="square" strokeWidth="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 <span className="text-sm text-white/60 leading-relaxed">
-                  Nattampalayam, 76, Pallipalayam - Sankari Rd,<br />
+                  Nattampalayam, 76, Sankari Rd,<br />
                   Sangagiri, Tamil Nadu 637303
                 </span>
               </li>
