@@ -23,7 +23,7 @@ export default function Hero() {
           <div className="animate-fade-in-up inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 mb-8 mt-4">
             <div className="w-2 h-2 bg-primary rounded-full" />
             <span className="text-white/80 text-xs font-medium tracking-wider uppercase">
-              Trusted Granite Exporters Since 2006
+              Trusted Granite Exporters Since 2005
             </span>
           </div>
 
