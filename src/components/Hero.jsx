@@ -30,7 +30,7 @@ export default function Hero() {
           {/* Heading */}
           <h1 className="animate-fade-in-up delay-100 section-title text-white mb-6 opacity-0">
             <span className="block text-5xl md:text-6xl lg:text-7xl mb-2">Arul Granites</span>
-            <span className="block text-3xl md:text-4xl lg:text-5xl text-white/90">
+            <span className="block text-2xl md:text-3xl lg:text-4xl text-white/90 font-normal mt-3">
               Precision in <span className="text-primary-light">Every Stone</span>
             </span>
           </h1>
@@ -75,7 +75,7 @@ export default function Hero() {
         <div className="animate-fade-in-up delay-500 opacity-0 mt-16 sm:mt-20 grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/10 max-w-2xl">
           {[
             { value: '20+', label: 'Years Experience' },
-            { value: '6', label: 'Countries Exported' },
+            { value: '6+', label: 'Countries Exported' },
             { value: '100+', label: 'Containers Annually' },
           ].map((stat, i) => (
             <div key={i} className="bg-dark/50 backdrop-blur-sm px-4 py-5 sm:px-6">
