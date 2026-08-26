@@ -46,10 +46,10 @@ export default function Hero() {
           </div>
 
           {/* CTA buttons */}
-          <div className="animate-fade-in-up delay-300 flex flex-wrap gap-4 opacity-0">
+          <div className="animate-fade-in-up delay-300 flex flex-col sm:flex-row gap-4 opacity-0">
             <a
               href="#colours"
-              className="inline-flex items-center px-8 py-4 bg-primary text-white text-sm font-semibold tracking-wider uppercase hover:bg-primary-dark transition-colors"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 bg-primary text-white text-sm font-semibold tracking-wider uppercase hover:bg-primary-dark transition-colors"
             >
               Explore Collection
               <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -58,7 +58,7 @@ export default function Hero() {
             </a>
             <a
               href="#about"
-              className="inline-flex items-center px-8 py-4 border-2 border-white/30 text-white text-sm font-semibold tracking-wider uppercase hover:bg-white/10 transition-colors"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 border-2 border-white/30 text-white text-sm font-semibold tracking-wider uppercase hover:bg-white/10 transition-colors"
             >
               Learn More
             </a>
@@ -66,16 +66,16 @@ export default function Hero() {
         </div>
 
         {/* Stats bar */}
-        <div className="animate-fade-in-up delay-500 opacity-0 mt-20 grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 max-w-2xl">
+        <div className="animate-fade-in-up delay-500 opacity-0 mt-16 sm:mt-20 grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 max-w-2xl">
           {[
             { value: '20+', label: 'Years Experience' },
-            { value: '6+', label: 'Countries Exported' },
+            { value: '6', label: 'Countries Exported' },
             { value: '500+', label: 'Monument Designs' },
             { value: '100K+', label: 'Sq Ft Monthly' },
           ].map((stat, i) => (
-            <div key={i} className="bg-dark/50 backdrop-blur-sm px-6 py-5">
-              <div className="text-2xl font-bold text-white">{stat.value}</div>
-              <div className="text-xs text-white/50 font-medium tracking-wider uppercase mt-1">
+            <div key={i} className="bg-dark/50 backdrop-blur-sm px-4 py-5 sm:px-6">
+              <div className="text-xl sm:text-2xl font-bold text-white">{stat.value}</div>
+              <div className="text-[10px] sm:text-xs text-white/50 font-medium tracking-wider uppercase mt-1">
                 {stat.label}
               </div>
             </div>

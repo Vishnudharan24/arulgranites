@@ -46,7 +46,7 @@ export default function Monuments() {
         </div>
 
         {/* Masonry-style gallery */}
-        <div className="columns-2 md:columns-3 lg:columns-4 gap-1 space-y-1">
+        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-1 space-y-1">
           {monumentImages.map((src, i) => (
             <div
               key={i}

@@ -59,7 +59,7 @@ export default function About() {
             </p>
 
             {/* Features grid */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {[
                 { icon: '◆', title: 'Premium Quality', desc: 'Hand-selected blocks from top quarries' },
                 { icon: '◆', title: 'Global Export', desc: 'Shipping to Germany, France, USA, Canada, Poland & UK' },
