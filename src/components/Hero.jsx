@@ -34,10 +34,16 @@ export default function Hero() {
           </h1>
 
           {/* Description */}
-          <p className="animate-fade-in-up delay-200 text-lg md:text-xl text-white/70 mb-10 leading-relaxed max-w-lg opacity-0">
-            From quarry to continent — exporting premium Indian granite monuments
-            and stone products with unmatched craftsmanship.
-          </p>
+          <div className="animate-fade-in-up delay-200 mb-10 opacity-0">
+            <p className="text-lg md:text-xl text-white/70 leading-relaxed max-w-lg mb-3">
+              From quarry to continent — exporting premium Indian granite monuments
+              and stone products with unmatched craftsmanship.
+            </p>
+            <p className="text-sm md:text-base text-white/90 font-medium tracking-wide flex items-center gap-2">
+              <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              Serving: Germany, France, USA, Canada, Poland, UK
+            </p>
+          </div>
 
           {/* CTA buttons */}
           <div className="animate-fade-in-up delay-300 flex flex-wrap gap-4 opacity-0">
