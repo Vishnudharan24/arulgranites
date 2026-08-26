@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { monumentImages } from '../data/monumentsData'
 import Navbar from '../components/Navbar'
+import { Helmet } from 'react-helmet-async'
 
 export default function AllMonuments() {
   const [lightbox, setLightbox] = useState(null)
@@ -11,6 +12,10 @@ export default function AllMonuments() {
 
   return (
     <div className="min-h-screen bg-surface-alt">
+      <Helmet>
+        <title>All Monuments | Arul Granites</title>
+        <meta name="description" content="Browse our complete collection of 260+ meticulously crafted granite monuments, memorials, and headstones." />
+      </Helmet>
       {/* Navbar */}
       <Navbar alwaysSolid />
 

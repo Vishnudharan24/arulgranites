@@ -4,6 +4,8 @@ import Footer from '../components/Footer';
 import { colourSwatches } from '../components/Colours';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
+import { Helmet } from 'react-helmet-async'
+
 export default function AllColours() {
   const ref = useScrollReveal();
 
@@ -13,6 +15,10 @@ export default function AllColours() {
 
   return (
     <div className="min-h-screen flex flex-col bg-surface-alt">
+      <Helmet>
+        <title>Granite Colours | Arul Granites</title>
+        <meta name="description" content="Explore our premium collection of 26 Indian granite colours including Absolute Black, Premium Black, and more." />
+      </Helmet>
       <Navbar alwaysSolid />
       
       <main className="flex-1 pt-32 pb-24">
