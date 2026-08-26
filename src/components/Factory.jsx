@@ -6,8 +6,8 @@ const factoryImages = [
   { src: './assets/factory/IMG_5252.JPG', alt: 'Cutting machines in operation' },
   { src: './assets/factory/IMG_5253.JPG', alt: 'Polishing and finishing area' },
   { src: './assets/factory/IMG_5254.JPG', alt: 'Stone blocks storage yard' },
-  { src: './assets/factory/IMG_5255.JPG', alt: 'Quality inspection station' },
   { src: './assets/factory/94046add-c144-403e-9c82-d8c9b7379a06.JPG', alt: 'Overhead crane and logistics' },
+  { src: './assets/factory/IMG_5255.JPG', alt: 'Quality inspection station' },
 ];
 
 export default function Factory() {
