@@ -14,6 +14,7 @@ export default function Home() {
       <Helmet>
         <title>Arul Granites Pvt Ltd | Premium Granite Exporters</title>
         <meta name="description" content="Leading manufacturer and exporter of premium Indian granite monuments, headstones, and stone products based in Tamil Nadu." />
+        <link rel="canonical" href="https://www.arulgranites.com/" />
       </Helmet>
       <Navbar />
       <Hero />

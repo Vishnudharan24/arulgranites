@@ -15,6 +15,7 @@ export default function AllMonuments() {
       <Helmet>
         <title>All Monuments | Arul Granites</title>
         <meta name="description" content="Browse our complete collection of 260+ meticulously crafted granite monuments, memorials, and headstones." />
+        <link rel="canonical" href="https://www.arulgranites.com/monuments" />
       </Helmet>
       {/* Navbar */}
       <Navbar alwaysSolid />

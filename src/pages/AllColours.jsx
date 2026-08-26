@@ -18,6 +18,7 @@ export default function AllColours() {
       <Helmet>
         <title>Granite Colours | Arul Granites</title>
         <meta name="description" content="Explore our premium collection of 26 Indian granite colours including Absolute Black, Premium Black, and more." />
+        <link rel="canonical" href="https://www.arulgranites.com/colours" />
       </Helmet>
       <Navbar alwaysSolid />
       
