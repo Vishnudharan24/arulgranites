@@ -7,9 +7,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-primary flex items-center justify-center">
-                <span className="text-white font-bold text-lg tracking-tighter">AG</span>
-              </div>
+              <img 
+                src={`${import.meta.env.BASE_URL}assets/aglogo.jpeg`} 
+                alt="Arul Granites Logo" 
+                className="w-10 h-10 object-cover rounded-sm" 
+              />
               <div>
                 <span className="text-sm font-bold tracking-wide">ARUL GRANITES</span>
                 <span className="block text-[10px] tracking-[0.2em] text-white/50">PVT LTD</span>

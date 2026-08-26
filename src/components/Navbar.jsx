@@ -31,9 +31,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-primary flex items-center justify-center">
-              <span className="text-white font-bold text-lg tracking-tighter">AG</span>
-            </div>
+            <img 
+              src={`${import.meta.env.BASE_URL}assets/aglogo.jpeg`} 
+              alt="Arul Granites Logo" 
+              className="w-10 h-10 object-cover rounded-sm" 
+            />
             <div className="hidden sm:block">
               <span className={`text-sm font-bold tracking-wide transition-colors ${scrolled ? 'text-text-primary' : 'text-white'}`}>
                 ARUL GRANITES
