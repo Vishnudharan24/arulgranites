@@ -75,7 +75,6 @@ export default function About() {
             </div>
           </div>
         </div>
-        </div>
 
         {/* Founder's Note */}
         <div ref={ref} className="reveal mt-24 bg-white p-8 lg:p-12 border-l-4 border-primary shadow-sm relative overflow-hidden">
