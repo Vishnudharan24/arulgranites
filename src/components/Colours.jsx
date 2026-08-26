@@ -2,7 +2,7 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const colourSwatches = [
   { src: './assets/colours/IMG_4220.PNG', name: 'India Black (Absolute Black)' },
-  { src: './assets/colours/IMG_4222.WEBP', name: 'Granite 2' },
+  { src: './assets/colours/IMG_4222.WEBP', name: 'India Mist' },
   { src: './assets/colours/IMG_4224.WEBP', name: 'Bahama blue' },
   { src: './assets/colours/IMG_4226.PNG', name: 'Wiscont white' },
   { src: './assets/colours/IMG_4227.JPG', name: 'Indian Mahagony' },
@@ -19,13 +19,13 @@ const colourSwatches = [
   { src: './assets/colours/IMG_4238.JPG', name: 'Coffee brown' },
   { src: './assets/colours/IMG_4239.PNG', name: 'NH red' },
   { src: './assets/colours/IMG_4240.JPG', name: 'Romantica' },
-  { src: './assets/colours/IMG_4244.PNG', name: 'Granite 19' },
+  { src: './assets/colours/IMG_4244.PNG', name: 'Multi Red' },
   { src: './assets/colours/IMG_4245.PNG', name: 'Kuppam green' },
   { src: './assets/colours/IMG_4246.PNG', name: 'Paradiso violet' },
   { src: './assets/colours/IMG_4247.jpg', name: 'India pink' },
   { src: './assets/colours/IMG_4248.jpg', name: 'Himalayan blue' },
-  { src: './assets/colours/IMG_4249.AVIF', name: 'Granite 24' },
-  { src: './assets/colours/IMG_4250.jpg', name: 'Granite 25' },
+  { src: './assets/colours/IMG_4249.AVIF', name: 'Dakota' },
+  { src: './assets/colours/IMG_4250.jpg', name: 'Autumn red' },
   { src: './assets/colours/IMG_4251.WEBP', name: 'Indian juparana' },
 ];
 
