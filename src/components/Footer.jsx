@@ -61,24 +61,24 @@ export default function Footer() {
                   <path strokeLinecap="square" strokeWidth="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 <span className="text-sm text-white/60 leading-relaxed">
-                  76, Nattampalayam, Sankari Rd,<br />
-                  Sankari, Tamil Nadu 637303
+                  76, Nattamplayam, Sankari West, Salem DT,<br />
+                  Tamil Nadu 637303, India
                 </span>
               </li>
               <li className="flex gap-3">
                 <svg className="w-5 h-5 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="square" strokeWidth="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <a href="tel:+919443146055" className="text-sm text-white/60 hover:text-white transition-colors">
-                  +91 94431 46055
+                <a href="tel:+919943630638" className="text-sm text-white/60 hover:text-white transition-colors">
+                  +91 99436 30638
                 </a>
               </li>
               <li className="flex gap-3">
                 <svg className="w-5 h-5 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="square" strokeWidth="1.5" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                 </svg>
-                <a href="mailto:arulgranites@gmail.com" className="text-sm text-white/60 hover:text-white transition-colors">
-                  arulgranites@gmail.com
+                <a href="mailto:info@arulgranites.com" className="text-sm text-white/60 hover:text-white transition-colors">
+                  info@arulgranites.com
                 </a>
               </li>
             </ul>
