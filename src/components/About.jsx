@@ -75,6 +75,48 @@ export default function About() {
             </div>
           </div>
         </div>
+        </div>
+
+        {/* Founder's Note */}
+        <div ref={ref} className="reveal mt-24 bg-white p-8 lg:p-12 border-l-4 border-primary shadow-sm relative overflow-hidden">
+          {/* Decorative quote icon */}
+          <div className="absolute -top-4 -right-4 p-8 text-primary/5">
+            <svg className="w-32 h-32" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+            </svg>
+          </div>
+          
+          <div className="relative z-10">
+            <div className="flex items-center gap-4 mb-6">
+              <span className="text-xs font-semibold tracking-[0.2em] text-primary uppercase">
+                Founder's Note
+              </span>
+              <div className="section-divider" />
+            </div>
+            
+            <div className="space-y-4 text-text-secondary text-lg leading-relaxed max-w-4xl font-playfair italic">
+              <p>
+                Mr. N. K. Arul founded Arul Granites Private Limited in 2005, after gaining 25 years of experience in the granite quarrying industry, working alongside his father.
+              </p>
+              <p>
+                With this strong foundation of experience and knowledge, he established Arul Granites with a vision to deliver quality natural stone products and build lasting relationships with customers.
+              </p>
+              <p>
+                Over the past 20+ years, Arul Granites has grown into an established granite monument manufacturer and exporter, while continuing to follow the values of quality, reliability, craftsmanship, and timely delivery that our founder believed in from the beginning.
+              </p>
+            </div>
+            
+            <div className="mt-8 pt-8 border-t border-border-light flex items-center gap-4">
+              <div className="w-12 h-12 bg-primary/10 rounded-sm flex items-center justify-center text-primary font-playfair font-bold text-xl">
+                A
+              </div>
+              <div>
+                <div className="font-semibold text-text-primary tracking-wide">Mr. N. K. Arul</div>
+                <div className="text-sm text-text-muted">Founder, Arul Granites Private Limited</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
