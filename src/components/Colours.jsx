@@ -16,17 +16,17 @@ const colourSwatches = [
   { src: './assets/colours/IMG_4235.jpg', name: 'Aurora' },
   { src: './assets/colours/IMG_4236.WEBP', name: 'Regal black' },
   { src: './assets/colours/IMG_4237.WEBP', name: 'Sapphire blue' },
-  { src: './assets/colours/IMG_4238.JPG', name: 'Granite 16' },
+  { src: './assets/colours/IMG_4238.JPG', name: 'Coffee brown' },
   { src: './assets/colours/IMG_4239.PNG', name: 'NH red' },
   { src: './assets/colours/IMG_4240.JPG', name: 'Romantica' },
   { src: './assets/colours/IMG_4244.PNG', name: 'Granite 19' },
-  { src: './assets/colours/IMG_4245.PNG', name: 'Granite 20' },
-  { src: './assets/colours/IMG_4246.PNG', name: 'Granite 21' },
-  { src: './assets/colours/IMG_4247.jpg', name: 'Granite 22' },
-  { src: './assets/colours/IMG_4248.jpg', name: 'Granite 23' },
+  { src: './assets/colours/IMG_4245.PNG', name: 'Kuppam green' },
+  { src: './assets/colours/IMG_4246.PNG', name: 'Paradiso violet' },
+  { src: './assets/colours/IMG_4247.jpg', name: 'India pink' },
+  { src: './assets/colours/IMG_4248.jpg', name: 'Himalayan blue' },
   { src: './assets/colours/IMG_4249.AVIF', name: 'Granite 24' },
   { src: './assets/colours/IMG_4250.jpg', name: 'Granite 25' },
-  { src: './assets/colours/IMG_4251.WEBP', name: 'Granite 26' },
+  { src: './assets/colours/IMG_4251.WEBP', name: 'Indian juparana' },
 ];
 
 export default function Colours() {
