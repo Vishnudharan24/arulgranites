@@ -5,7 +5,7 @@ import { monumentImages } from '../data/monumentsData';
 
 export default function Monuments() {
   const [lightbox, setLightbox] = useState(null);
-  const { ref } = useScrollReveal();
+  const ref = useScrollReveal();
 
   // Only show the first 3 images on the home page
   const displayImages = monumentImages.slice(0, 3);

@@ -1,12 +1,13 @@
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 export default function About() {
-  const ref = useScrollReveal();
+  const mainRef = useScrollReveal();
+  const noteRef = useScrollReveal();
 
   return (
     <section id="about" className="py-24 lg:py-32 bg-surface">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div ref={ref} className="reveal grid lg:grid-cols-2 gap-16 items-center">
+        <div ref={mainRef} className="reveal grid lg:grid-cols-2 gap-16 items-center">
           {/* Image side */}
           <div className="relative">
             <div className="relative overflow-hidden">
@@ -77,7 +78,7 @@ export default function About() {
         </div>
 
         {/* Founder's Note */}
-        <div ref={ref} className="reveal mt-24 bg-white p-8 lg:p-12 border-l-4 border-primary shadow-sm relative overflow-hidden">
+        <div ref={noteRef} className="reveal mt-24 bg-white p-8 lg:p-12 border-l-4 border-primary shadow-sm relative overflow-hidden">
           {/* Decorative quote icon */}
           <div className="absolute -top-4 -right-4 p-8 text-primary/5">
             <svg className="w-32 h-32" fill="currentColor" viewBox="0 0 24 24">
