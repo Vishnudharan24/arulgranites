@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const factoryImages = [
+  { src: './assets/factory/IMG_5255.JPG', alt: 'Large block cutting machine' },
+  { src: './assets/factory/94046add-c144-403e-9c82-d8c9b7379a06.JPG', alt: 'Overhead crane and logistics' },
   { src: './assets/factory/IMG_5251.JPG', alt: 'Factory overview — granite processing facility' },
   { src: './assets/factory/IMG_5252.JPG', alt: 'Cutting machines in operation' },
   { src: './assets/factory/IMG_5253.JPG', alt: 'Polishing and finishing area' },
   { src: './assets/factory/IMG_5254.JPG', alt: 'Stone blocks storage yard' },
-  { src: './assets/factory/94046add-c144-403e-9c82-d8c9b7379a06.JPG', alt: 'Overhead crane and logistics' },
-  { src: './assets/factory/IMG_5255.JPG', alt: 'Quality inspection station' },
 ];
 
 export default function Factory() {
