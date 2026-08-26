@@ -2,22 +2,22 @@ import { useState } from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const monumentImages = [
-  '/assets/monuments/IMG_4729.JPG',
-  '/assets/monuments/IMG_4730.JPG',
-  '/assets/monuments/IMG_4731.JPG',
-  '/assets/monuments/IMG_4732.JPG',
-  '/assets/monuments/IMG_4733.JPG',
-  '/assets/monuments/IMG_4735.JPG',
-  '/assets/monuments/IMG_4736.JPG',
-  '/assets/monuments/IMG_4738.JPG',
-  '/assets/monuments/IMG_4739.JPG',
-  '/assets/monuments/IMG_4740.JPG',
-  '/assets/monuments/IMG_4741.JPG',
-  '/assets/monuments/IMG_4742.JPG',
-  '/assets/monuments/IMG_4743.JPG',
-  '/assets/monuments/IMG_4745.JPG',
-  '/assets/monuments/IMG_4746.JPG',
-  '/assets/monuments/IMG_4747.JPG',
+  './assets/monuments/IMG_4729.JPG',
+  './assets/monuments/IMG_4730.JPG',
+  './assets/monuments/IMG_4731.JPG',
+  './assets/monuments/IMG_4732.JPG',
+  './assets/monuments/IMG_4733.JPG',
+  './assets/monuments/IMG_4735.JPG',
+  './assets/monuments/IMG_4736.JPG',
+  './assets/monuments/IMG_4738.JPG',
+  './assets/monuments/IMG_4739.JPG',
+  './assets/monuments/IMG_4740.JPG',
+  './assets/monuments/IMG_4741.JPG',
+  './assets/monuments/IMG_4742.JPG',
+  './assets/monuments/IMG_4743.JPG',
+  './assets/monuments/IMG_4745.JPG',
+  './assets/monuments/IMG_4746.JPG',
+  './assets/monuments/IMG_4747.JPG',
 ];
 
 export default function Monuments() {

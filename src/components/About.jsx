@@ -11,7 +11,7 @@ export default function About() {
           <div className="relative">
             <div className="relative overflow-hidden">
               <img
-                src="/assets/factory/IMG_5251.JPG"
+                src="./assets/factory/IMG_5251.JPG"
                 alt="Arul Granites Factory"
                 className="w-full h-[500px] object-cover"
               />
