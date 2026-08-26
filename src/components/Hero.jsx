@@ -70,7 +70,7 @@ export default function Hero() {
           {[
             { value: '20+', label: 'Years Experience' },
             { value: '6', label: 'Countries Exported' },
-            { value: '500+', label: 'Monument Designs' },
+            { value: '268', label: 'Monument Designs' },
             { value: '100K+', label: 'Sq Ft Monthly' },
           ].map((stat, i) => (
             <div key={i} className="bg-dark/50 backdrop-blur-sm px-4 py-5 sm:px-6">
