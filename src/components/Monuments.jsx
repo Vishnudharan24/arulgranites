@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
-import { Link } from 'react-router-dom';
 import { monumentImages } from '../data/monumentsData';
+import { Link } from 'react-router-dom';
 
 export default function Monuments() {
-  const [lightbox, setLightbox] = useState(null);
   const ref = useScrollReveal();
+  const [lightbox, setLightbox] = useState(null);
 
-  // Only show the first 3 images on the home page
+  // Take first 3 images for preview
   const displayImages = monumentImages.slice(0, 3);
 
   return (
@@ -23,11 +23,11 @@ export default function Monuments() {
             <div className="section-divider" />
           </div>
           <h2 className="section-title text-4xl lg:text-5xl text-text-primary mb-4">
-            Monument Collection
+            Premium Monuments
           </h2>
           <p className="text-text-secondary max-w-2xl mx-auto text-lg">
-            Exquisitely crafted granite monuments — headstones, memorials, and
-            custom designs built to last for generations.
+            Browse our extensive collection of meticulously crafted granite memorials,
+            headstones, and architectural monuments.
           </p>
         </div>
 
@@ -41,7 +41,7 @@ export default function Monuments() {
             >
               <img
                 src={src}
-                alt={`Monument design preview ${i + 1}`}
+                alt={`Premium Indian Granite Monument and Headstone Design ${i + 1} by Arul Granites`}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
               />
@@ -55,8 +55,10 @@ export default function Monuments() {
           <Link
             to="/monuments"
             className="inline-flex items-center px-8 py-4 bg-primary text-white text-sm font-semibold tracking-wider uppercase hover:bg-primary-dark transition-colors"
+            title="View all our monument designs"
+            aria-label="View all our monument designs"
           >
-            View All Monuments
+            View Full Collection
             <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="square" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
@@ -67,53 +69,24 @@ export default function Monuments() {
       {/* Lightbox */}
       {lightbox !== null && (
         <div
-          className="fixed inset-0 z-50 bg-dark/95 backdrop-blur-sm flex items-center justify-center p-4 sm:p-8 animate-fade-in"
+          className="fixed inset-0 z-50 bg-dark/95 flex items-center justify-center p-4 animate-fade-in"
           onClick={() => setLightbox(null)}
         >
           <button
-            className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors p-2"
-            onClick={(e) => { e.stopPropagation(); setLightbox(null); }}
+            className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
+            onClick={() => setLightbox(null)}
           >
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              <path strokeLinecap="square" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
 
-          <div className="relative w-full max-w-5xl max-h-full flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
-            <button
-              className="absolute left-0 p-4 text-white/50 hover:text-white transition-colors"
-              onClick={(e) => {
-                e.stopPropagation();
-                setLightbox(l => l > 0 ? l - 1 : displayImages.length - 1);
-              }}
-            >
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-
-            <img
-              src={displayImages[lightbox]}
-              alt="Monument detailed view"
-              className="max-w-full max-h-[85vh] object-contain shadow-2xl"
-            />
-
-            <button
-              className="absolute right-0 p-4 text-white/50 hover:text-white transition-colors"
-              onClick={(e) => {
-                e.stopPropagation();
-                setLightbox(l => l < displayImages.length - 1 ? l + 1 : 0);
-              }}
-            >
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-
-          <div className="absolute bottom-6 left-0 right-0 text-center text-white/50 text-sm">
-            {lightbox + 1} / {displayImages.length}
-          </div>
+          <img
+            src={displayImages[lightbox]}
+            alt={`Premium Indian Granite Monument and Headstone Design ${lightbox + 1} by Arul Granites`}
+            className="max-w-full max-h-[85vh] object-contain animate-scale-in"
+            onClick={(e) => e.stopPropagation()}
+          />
         </div>
       )}
     </section>

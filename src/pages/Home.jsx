@@ -17,11 +17,13 @@ export default function Home() {
         <link rel="canonical" href="https://www.arulgranites.com/" />
       </Helmet>
       <Navbar />
-      <Hero />
-      <About />
-      <Factory />
-      <Monuments />
-      <Colours />
+      <main>
+        <Hero />
+        <About />
+        <Factory />
+        <Monuments />
+        <Colours />
+      </main>
       <Footer />
     </div>
   )

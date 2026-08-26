@@ -16,47 +16,72 @@ export default function AllMonuments() {
         <title>All Monuments | Arul Granites</title>
         <meta name="description" content="Browse our complete collection of 260+ meticulously crafted granite monuments, memorials, and headstones." />
         <link rel="canonical" href="https://www.arulgranites.com/monuments" />
+        <meta property="og:title" content="All Monuments | Arul Granites" />
+        <meta property="og:description" content="Browse our complete collection of 260+ meticulously crafted granite monuments, memorials, and headstones." />
+        <meta property="og:url" content="https://www.arulgranites.com/monuments" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.arulgranites.com/"
+              },{
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Monuments",
+                "item": "https://www.arulgranites.com/monuments"
+              }]
+            }
+          `}
+        </script>
       </Helmet>
       {/* Navbar */}
       <Navbar alwaysSolid />
 
-      {/* Main Content */}
-      <div className="pt-32 pb-24 max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-4 mb-6">
-            <div className="h-px w-8 bg-primary/30" />
-            <span className="text-xs font-semibold tracking-[0.2em] text-primary uppercase">
-              Full Collection
-            </span>
-            <div className="h-px w-8 bg-primary/30" />
-          </div>
-          <h1 className="text-4xl lg:text-5xl text-text-primary mb-4 font-playfair">
-            All Monuments
-          </h1>
-          <p className="text-text-secondary max-w-2xl mx-auto text-lg">
-            Browse our complete collection of meticulously crafted granite monuments and memorials.
-          </p>
-        </div>
-
-        {/* Masonry-style gallery */}
-        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-          {monumentImages.map((src, i) => (
-            <div
-              key={i}
-              className="group relative overflow-hidden cursor-pointer break-inside-avoid bg-white shadow-sm hover:shadow-md transition-shadow"
-              onClick={() => setLightbox(i)}
-            >
-              <img
-                src={src}
-                alt={`Monument design ${i + 1}`}
-                className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-dark/0 group-hover:bg-dark/20 transition-colors duration-300" />
+      <main>
+        {/* Main Content */}
+        <div className="pt-32 pb-24 max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="h-px w-8 bg-primary/30" />
+              <span className="text-xs font-semibold tracking-[0.2em] text-primary uppercase">
+                Full Collection
+              </span>
+              <div className="h-px w-8 bg-primary/30" />
             </div>
-          ))}
+            <h1 className="text-4xl lg:text-5xl text-text-primary mb-4 font-playfair">
+              All Monuments
+            </h1>
+            <p className="text-text-secondary max-w-2xl mx-auto text-lg">
+              Browse our complete collection of meticulously crafted granite monuments and memorials.
+            </p>
+          </div>
+
+          {/* Masonry-style gallery */}
+          <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+            {monumentImages.map((src, i) => (
+              <div
+                key={i}
+                className="group relative overflow-hidden cursor-pointer break-inside-avoid bg-white shadow-sm hover:shadow-md transition-shadow"
+                onClick={() => setLightbox(i)}
+              >
+                <img
+                  src={src}
+                  alt={`Premium Indian Granite Monument and Headstone Design ${i + 1} by Arul Granites`}
+                  className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-dark/0 group-hover:bg-dark/20 transition-colors duration-300" />
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </main>
 
       {/* Lightbox */}
       {lightbox !== null && (

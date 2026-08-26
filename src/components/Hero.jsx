@@ -51,6 +51,8 @@ export default function Hero() {
           <div className="animate-fade-in-up delay-300 flex flex-col sm:flex-row gap-4 opacity-0">
             <a
               href="#colours"
+              title="Explore our granite colour collection"
+              aria-label="Explore our granite colour collection"
               className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 bg-primary text-white text-sm font-semibold tracking-wider uppercase hover:bg-primary-dark transition-colors"
             >
               Explore Collection
@@ -60,6 +62,8 @@ export default function Hero() {
             </a>
             <a
               href="#about"
+              title="Learn more about Arul Granites"
+              aria-label="Learn more about Arul Granites"
               className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 border-2 border-white/30 text-white text-sm font-semibold tracking-wider uppercase hover:bg-white/10 transition-colors"
             >
               Learn More
