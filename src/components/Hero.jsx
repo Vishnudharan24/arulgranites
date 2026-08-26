@@ -4,7 +4,7 @@ export default function Hero() {
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/assets/factory/IMG_5254.JPG)' }}
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}assets/factory/IMG_5254.JPG)` }}
       />
 
       {/* Overlay */}
