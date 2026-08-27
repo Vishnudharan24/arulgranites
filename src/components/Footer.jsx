@@ -3,9 +3,9 @@ export default function Footer() {
     <footer id="contact" className="bg-dark text-white">
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Brand */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-4">
             <div className="flex items-center gap-3 mb-6">
               <img 
                 src={`${import.meta.env.BASE_URL}assets/aglogo.jpeg`} 
@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
 
           {/* Quick links */}
-          <div>
+          <div className="lg:col-span-2">
             <h4 className="text-xs font-semibold tracking-[0.2em] uppercase mb-6 text-white/40">
               Quick Links
             </h4>
@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="lg:col-span-3">
             <h4 className="text-xs font-semibold tracking-[0.2em] uppercase mb-6 text-white/40">
               Contact Us
             </h4>
@@ -82,6 +82,25 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
+          </div>
+
+          {/* Map */}
+          <div className="lg:col-span-3">
+            <h4 className="text-xs font-semibold tracking-[0.2em] uppercase mb-6 text-white/40">
+              Location
+            </h4>
+            <div className="rounded-sm overflow-hidden h-[13.5rem] w-full bg-white/5 ring-1 ring-white/10 hover:ring-primary/50 transition-colors duration-300">
+              <iframe
+                title="Arul Granites Location"
+                src="https://maps.google.com/maps?q=Arul%20Granites,%2076,%20Nattamplayam,%20Sankari%20West,%20Salem%20DT,%20Tamil%20Nadu%20637303,%20India&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0, filter: 'grayscale(0.2) contrast(1.1)' }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
